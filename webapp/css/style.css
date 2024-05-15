@@ -1,0 +1,38 @@
+/* Enter your custom styles here */
+.labelid{
+    color:blue;
+    padding-left: 30px;
+   
+}
+.inputid{
+    border: 2px;
+    border-color: red;
+    padding-left: 30px;
+}
+.inputid2{
+    border:2px ;
+    padding-left: 30px;
+   
+}
+
+.inputid4{
+    border:2px ;
+    padding-left: 30px;
+}
+.vbox{
+    border: 2px solid red;
+    padding-bottom: 30px;
+    width: 40%;
+    padding-top: 30px;
+    padding-left: 30px;
+
+}
+.main{
+    color:red;
+   text-align: right;
+   font-size: medium;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: bolder;
+   display: flexbox;
+   justify-content: center;
+}

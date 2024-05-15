@@ -1,0 +1,158 @@
+<mvc:View
+    xmlns:form="sap.ui.layout.form"
+    xmlns:tnt2="sap.tnt"
+    xmlns:tnt="sap.tnt.InfoLabel"
+    controllerName="com.app.ui5demo.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+ >
+
+
+   
+   
+     <HBox >
+    <Label text="Calculator"  ></Label>
+    </HBox>
+
+    <VBox
+        class="vbox"
+        id="33"
+    >
+        <Label
+            id="77"
+            class="main"
+            text="Calculator"
+            textAlign="Right"
+        />
+        <Label
+            class="labelid"
+            id="1"
+            labelFor="inputid"
+            text="FirstNumber:"
+        />
+        <Input
+            class="inputid"
+            id="3"
+            type="Number"
+            width="60%"
+            placeholder="Enter a Number"
+            required="true"
+        />
+
+        <Label
+            class="labelid"
+            id="2"
+            labelFor="inputid2"
+            text="SecondNumber:"
+        />
+        <Input
+            class="inputid2"
+            id="4"
+            type="Number"
+            width="60%"
+            placeholder="Enter a Number"
+            required="true"
+        />
+
+        <Label
+            class="labelid"
+            id="5"
+            labelFor="inputid4"
+            text="Operator:"
+        />
+        <Input
+            class="inputid4"
+            id="6"
+            type="Text"
+            width="60%"
+            placeholder="+,-,*,/"
+        />
+
+        <HBox id="22">
+            <Button
+                class="button"
+                id="7"
+                text="Calculation"
+                press="onClick"
+            />
+            <Button
+                class="button1"
+                id="8"
+                text="clear"
+                press="onClick1"
+                type="Default"
+            />
+        </HBox>
+    </VBox>
+     <!-- <form:SimpleForm id="SimpleFormChange354"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<Label id ="111" class="label" text="Name:" labelFor="222"></Label>
+            <Input id = "222" class="input" type="Text" value="{studentDetails>/student/name}"></Input>
+		</form:SimpleForm> --> 
+     <!-- <Table items="{/student}" alternateRowColors="true" growing="true" growingThreshold="7" growingScrollToLoad="true">
+        <columns>
+            <Column>
+                <header>
+                    <Title text="name" />
+                </header>
+            </Column>
+            <Column>
+                <header>
+                    <Title text="address" />
+                </header>
+            </Column>
+            <Column>
+                <header>
+                    <Title text="email" />
+                </header>
+            </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <Text text="{fName} {lName}" />
+                    <Text text="{address/0/street}" />
+                    <Text text="{email}" />
+                </ColumnListItem>
+            </items>
+        
+    </Table> -->
+
+     <!-- Expression Binding:-we can perform some simple logics
+             ex:a?b:c  -->
+
+ <!-- <l:VerticalLayout id="idvl"  binding="{/person}">
+  <Label id="i" labelFor="idv1" text="enter the age"/>  
+<Input value="{EmployeeAge}"/>
+<Input  editable="{= ${EmployeeAge} > 30 ? true : false}"/>
+</l:VerticalLayout>  -->
+
+ <!-- element binding 
+ <l:VerticalLayout id="verticalLayout" binding="{/person}" >
+<Input value="{EmployeeName}" id="id1"/>
+</l:VerticalLayout> 
+ <l:VerticalLayout id="idVerticalLayout" binding="{/person}">
+        <Input value="{EmployeeName}"></Input>
+        <Input value="{EmployeeAge}"></Input>
+        <Input value="{ContractStarted}"></Input>
+        <Input value="{Email}"></Input>
+        <Button text="Submit" press="onSubmitData"/>
+    </l:VerticalLayout> -->
+
+</mvc:View>
